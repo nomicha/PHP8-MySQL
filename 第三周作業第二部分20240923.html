@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>第三周作業第二部分20240923</title>
+</head>
+<body>
+
+<table border="1">
+<tr>								<!-- tr定義每一表格列-->
+   <th id="client">客戶端</th>		<!-- th定義標題列-->
+   <th id="server">伺服端</th>
+</tr>
+<tr><td colspan="2">AJAX</td></tr>	<!-- td定義儲存格-->
+<tr>
+   <td headers="client">JavaScript</td>
+   <td headers="server">ASP.NET</td>
+</tr>
+<tr>
+   <td>jQuery</td>
+   <td>PHP</td>
+</tr>
+</table>
+<hr/>
+<table border="">
+   <caption>每月存款金額</caption>
+   <thead>
+   <tr>
+     <th>月份</th>
+     <th>存款金額</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+     <td>一月</td>
+     <td>NT$ 5,000</td>
+   </tr>
+   <tr>
+     <td>二月</td>
+     <td>NT$ 1,000</td>
+   </tr>
+   </tbody>
+   <tfoot>
+   <tr>
+     <td>存款總額</td>
+     <td>NT$ 6,000</td>
+   </tr>
+   </tfoot>
+</table>
+
+<hr/><hr/>
+<div style="color:blue">								<!-- div是區塊變色-->
+   <h3>PHP</h3>
+   <p>伺服端網頁技術</p>
+</div>
+<p>外國人很多都是
+<span style="color:lightblue">淡藍色</span>眼睛</p>		<!-- span是單行元素變色-->
+
+<hr/><hr/>
+<form name="login" method="post" action="ch8-4-3.php">		<!-- form以下輸入的表單-->
+姓名: <input type="text" name="User" size="15"/><br/>		<!--會作用到此程式碼的action位置-->
+密碼: <input type="password" name="Pass" size="15"/><br/>
+地址: <textarea name="Address" rows="5" cols="50">
+</textarea><br/>
+
+<form name="info" method="post" action="ch8-4-4.php">
+性別: 
+<!-- type="radio"是核取方塊(單選)-->
+<input type="radio" name="Gender" 							
+             value="male" checked="True"/>男
+<input type="radio" name="Gender" 
+             value="female"/>女<br/>
+電腦系統: 
+<select name="Computer">									<!-- select是下拉式選單-->
+   <option value="PC" selected="True">PC</option>
+   <option value="MAC">MAC</option>
+</select><br/>
+瀏覽器:
+<!-- type="checkbox"是多選-->
+<input type="checkbox" name="GC" 							
+       checked="True" />Chrome								<!-- checked="True"是預設-->
+<input type="checkbox" name="SF"/>Safari
+<input type="checkbox" name="FF"/>Firefox<br/>
+推薦網站: <br/>
+<select name="Webs[]" size="4" multiple="True">				<!-- size是選項數，multiple是能否多選-->
+  <option value="w1" selected="True">Yahoo!奇摩</option>
+  <option value="w2">PC Home Online</option>
+  <option value="w3">中華電信Hinet</option>
+  <option value="w4">Google台灣</option>
+<input type="hidden" name="Type" value="Member"/><br/>	<!-- hidden是隱藏欄位-->
+<input type="submit" value="註冊使用者"/>
+</select>
+</body>
+</html>
